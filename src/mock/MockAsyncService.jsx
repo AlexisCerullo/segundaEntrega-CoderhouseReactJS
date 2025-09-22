@@ -6,7 +6,7 @@ const productos = [
         stock: 10,
         price: 250000,
         img: 'https://picsum.photos/200',
-        category: 'PCs Armadas'
+        category: 'pcs armadas'
     },
     {
         id: '02',
@@ -15,7 +15,7 @@ const productos = [
         stock: 15,
         price: 150000,
         img: 'https://picsum.photos/200',
-        category: 'Microprocesadores'
+        category: 'microprocesadores'
     },
         {
         id: '03',
@@ -24,7 +24,7 @@ const productos = [
         stock: 20,
         price: 900000,
         img: 'https://picsum.photos/200',
-        category: 'Placas de Video'
+        category: 'placas de video'
     },
         {
         id: '04',
@@ -33,7 +33,7 @@ const productos = [
         stock: 5,
         price: 90000,
         img: 'https://picsum.photos/200',
-        category: 'Gabinetes'
+        category: 'gabinetes'
     },
         {
         id: '05',
@@ -42,7 +42,7 @@ const productos = [
         stock: 2,
         price: 450000,
         img: 'https://picsum.photos/200',
-        category: 'Notebooks'
+        category: 'notebooks'
     },
         {
         id: '06',
@@ -51,7 +51,7 @@ const productos = [
         stock: 30,
         price: 10000,
         img: 'https://picsum.photos/200',
-        category: 'Perifericos'
+        category: 'perifericos'
     }
 ]
 
@@ -65,7 +65,7 @@ export const getProducts = () => {
             } else {
                 resolve(productos)
             }
-        }, 2000)
+        }, 1000)
     })
 }
 
@@ -74,6 +74,6 @@ export const getOneProduct = (id) => {
         setTimeout(() => {
             let producto = productos.find((producto) => producto.id === id);
             resolve(producto)
-        }, 2000)
+        }, 1000)
     })
 }
